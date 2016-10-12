@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class LazyLoadVerifier {
 
 	/**
-	 * Saves all the method names into an ArrayList and returns it
+	 * Saves all the method into an ArrayList and returns it
 	 *
 	 * @param c - class being passed in
 	 * @return methodNames - ArrayList of all the method names
