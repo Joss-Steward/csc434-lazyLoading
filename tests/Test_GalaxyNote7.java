@@ -1,10 +1,15 @@
 import static org.junit.Assert.*;
-
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-
 import org.junit.Test;
 
+/**
+ * 
+ * @author Joss Steward, Drew Rife, Brad Olah
+ * 
+ * Tests for a GalazyNote7
+ *
+ */
 public class Test_GalaxyNote7 {
 	public class MockGalaxyNote7 extends GalaxyNote7 {
 		/* Used for testing Lazy Loading */
@@ -20,13 +25,17 @@ public class Test_GalaxyNote7 {
 			// TODO Auto-generated method stub
 		}
 	}
-
+	
+	/**
+	 * Tests the getters
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetMethodsLazyLoading() throws Exception {
 		MockGalaxyNote7 testSubject = new MockGalaxyNote7();
 
 		ArrayList<Method> methods =
-				LazyLoadVerifier.getAllGetMethods(MockGalaxyNote7.class);
+				LazyLoadVerifier.getAllGetMethods(MockGalaxyNote7.class); 
 
 		for(Method m : methods){
 			int old = testSubject.loads;

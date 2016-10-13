@@ -1,3 +1,1 @@
-
-public class DomainObject {
-}
+public class DomainObject {}

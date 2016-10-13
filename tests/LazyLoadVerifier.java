@@ -12,7 +12,7 @@ public class LazyLoadVerifier {
 	 */
 	public static ArrayList<Method> getAllGetMethods(Class classToTest) throws Exception {
 		Method[] allMethods = classToTest.getSuperclass().getDeclaredMethods();
-
+ 
 		ArrayList<Method> getMethods = new ArrayList<Method>();
 
 		for(Method m : allMethods) {
