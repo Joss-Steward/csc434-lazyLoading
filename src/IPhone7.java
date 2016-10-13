@@ -1,7 +1,7 @@
 
-public class GalaxyNote7 extends DomainObject implements IDomainObject {
-	private boolean explodes;
-	private boolean isBurntPaperWeight;
+public class IPhone7 extends DomainObject implements IDomainObject {
+	private boolean hasHeadphoneJack;
+	private boolean isOverpriced;
 	private int price;
 
 	@Override
@@ -19,14 +19,14 @@ public class GalaxyNote7 extends DomainObject implements IDomainObject {
 		return price;
 	}
 
-	public boolean getExploded(){
+	public boolean getHasHeadphoneJack(){
 		Load(this);
-		return isBurntPaperWeight;
+		return hasHeadphoneJack;
 	}
 
-	public boolean getMightExplode(){
+	public boolean getIsOverpriced(){
 		Load(this);
-		return explodes;
+		return isOverpriced;
 	}
 
 

@@ -11,11 +11,11 @@ public class LazyLoadVerifier {
 	 * @throws Exception
 	 */
 	public static ArrayList<Method> getAllGetMethods(Class classToTest) throws Exception {
-		Method[] methods = classToTest.getDeclaredMethods();
+		Method[] allMethods = classToTest.getSuperclass().getDeclaredMethods();
 
 		ArrayList<Method> getMethods = new ArrayList<Method>();
 
-		for(Method m : methods) {
+		for(Method m : allMethods) {
 			String methodName = m.getName();
 
 			if(methodName.startsWith("get")) {
